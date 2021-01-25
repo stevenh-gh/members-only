@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :posts, only: %i[new create index]
 
   root 'posts#index'
+  get 'rails/info/routes' => 'routes'
 end
